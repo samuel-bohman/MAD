@@ -63,7 +63,7 @@ do
   DTYPE_SP="$DTYPE_SP $i"
 done
 
-export HF_HUB_CACHE="/myworkspace"
+export HF_HUB_CACHE="${HF_HUB_CACHE:-/myworkspace}"
 
 if [[ $TUNABLEOP == "on" ]]; then 
     export PYTORCH_TUNABLEOP_ENABLED=1
